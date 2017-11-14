@@ -1,3 +1,8 @@
+/*
+          Name: Adam Ryan
+Student Number: C16302271
+*/
+
 void setup()
 {
   size(800, 600);
@@ -34,10 +39,24 @@ void printProducts()
   }
 }
 
-
+void displayProducts()
+{
+  float horizontalMargin = width/16;
+  float verticalMargin = height/16;
+  float CMarginLeft = width/8;
+  float BetweenBoxes = (height/8);
+  
+  for(int i = 0; i< products.size(); i++)
+  {
+    stroke(0);
+    fill(255);
+    rect(0+horizontalMargin, verticalMargin+(i*(height/8)), (width/2) - CMarginLeft, verticalMargin+(i*(height/8)));
+  }
+  
+}
 
 void draw()
 {
-  background(0);
-  
+  background(195);
+  displayProducts();
 }
