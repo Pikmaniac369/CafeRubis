@@ -3,6 +3,8 @@ void setup()
   size(800, 600);
   
   loadData();
+  
+  printProducts();
 }
 
 //Declare global ArrayLists
@@ -37,5 +39,5 @@ void printProducts()
 void draw()
 {
   background(0);
-  printProducts();
+  
 }
