@@ -22,14 +22,20 @@ void loadData()
     products.add(product);
   }
   
-  
 }
 
-
+void printProducts()
+{
+  for(int i = 0; i< products.size(); i++)
+  {
+    println("", products.get(i));
+  }
+}
 
 
 
 void draw()
 {
-  
+  background(0);
+  printProducts();
 }
